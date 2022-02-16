@@ -1,13 +1,9 @@
-//* GLOBALS
+//* Modules
 
-//* __dirname   - path to currrent directory
-//* __filename  - file name
-//* require     - function to use modules (CommonJS)
-//* module      - info about current module (file)
-//* process     - info about env where the program is being executed
+const person = 'Bornak'
 
-console.log(__dirname);
+const sayHi = (name) => {
+    console.log(`Hello there ${name}`);
+}
 
-setInterval(()=>{
-    console.log('Hello World')
-}, 1000)
+sayHi(person);
